@@ -80,6 +80,11 @@
                 name: comment.name.trim() === '' ? 'Anonimo' : comment.name
             }))
         }
+    },
+    watch:{   //Metodo para Monitorar qualquer alteração no objeto definido abaixo.
+        comments(val){
+           // console.log('val', val);
+        }
     }
     })
 </script>
